@@ -1,0 +1,15 @@
+                          Clerk
+1.Go to clerk-->Dashboard-->create Application
+-->give name of your Application-->Choose all that you want to use like google fb git
+-->And there you will get all step 
+1.middleware.js
+   like:
+     export default clerkMiddleware((auth,req)=>{
+      if (isProtectedRoute(req)) auth().protect(); )
+      it will prevent unauthenticated person to visit settings page  
+2.In navber right side
+   clerkloaded,clerkloading,signedIn,signedOut,userbutton
+   
+3.Go to nextJS page from clerk and create a page under app
+  app/sign-in/[[...sign-in]]/page.jsx
+  add copy past all the code from there
