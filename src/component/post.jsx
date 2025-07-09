@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Comments from './homeitems/comments'
 
 export default function Post() {
   return (
@@ -23,7 +24,7 @@ export default function Post() {
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam beatae molestiae nostrum exercitationem vel accusamus aperiam, amet porro suscipit enim.</p>
       </div>
       {/* interaction                        */}
-      <div className='flex items-center justify-between text-sm mt-4'>
+      <div className='flex items-center justify-between text-sm my-4'>
        {/* like */}
        <div className='flex gap-8'>
           <div className='flex items-center gap-4 p-2 rounded-xl bg-slate-200'>
@@ -49,6 +50,7 @@ export default function Post() {
           </div>
        </div>
       </div>
+      <Comments></Comments>
     </div>
   )
 }
